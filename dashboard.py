@@ -40,7 +40,7 @@ def create_pie_chart(data):
     plt.pie(data['count_cr'], labels=data['season'], autopct='%1.1f%%', startangle=140, colors=['skyblue', 'lightgreen', 'lightcoral', 'lightsalmon'])
     plt.title('Persentase Jumlah Sewa Sepeda Berdasarkan Musim')
     plt.axis('equal')
-    st.pyplot()
+    st.pyplot(plt)
 
 def main():
     if selected_menu == "Dashboard":
